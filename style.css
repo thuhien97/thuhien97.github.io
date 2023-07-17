@@ -22,12 +22,12 @@ body{
    row-gap: 30px;
 }
 .fullname {
-    font-size: 3rem !important;
+    font-size: 1rem !important;
 }
 
 @media(max-width: 800px) {
     .fullname {
-        font-size: 10em !important;
+        font-size: 1.4em !important;
     }
   }
 
