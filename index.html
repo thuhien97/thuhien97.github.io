@@ -20,208 +20,195 @@
     <link id="theme-style" rel="stylesheet" href="assets/css/orbit-1.css">
 </head> 
 
-<body id="cv">
-    
-    <script>
-        function printPDF() {
-            $('#printPDF').hide()
-            const element = document.getElementById('cv');
-            const opt = {
-                filename: 'Tran_Thi_Thu_Hien_QC.pdf',
-                image: { type: 'jpeg', quality: 0.98 },
-                html2canvas: { scale: 2 },
-                jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
-            };
-
-            html2pdf().set(opt).from(element).save();
-            setTimeout(() => {
-                $('#printPDF').show()   
-            });
-        }
-    </script>
-    <div class="container" >
-        <div class="avatar">
-            <a title="Tải file định dạng pdf" id="printPDF" href="javascript:printPDF()">Xuất PDF</a>
-            <img src="./avatar.png" alt="">
-        </div>
-        <div class="name">
-            <h1 class="fullname">LÃ THỊ BÍCH HUỆ</h1>
-            <b class="">Nhân viên kiểm soát chất lượng phần mềm</b>
-            <ul class="contact">
-                <li>
-                    <span>-></span> 0332410258
-                </li>
-                <li>
-                    <span>-></span> <a href="mailto:lathibichhue453@gmail.com">Gmail</a>
-                </li>
-                <li>
-                    <span>-></span> <a href="https://www.facebook.com/la.thi.bich.hue" target="_blank"
-                        rel="noopener noreferrer">Facebook</a>
-                </li>
-            </ul>
+<body>
+    <div class="wrapper mt-lg-5">
+        <div class="sidebar-wrapper">
+            <div class="profile-container">
+                <img class="profile" src="assets/images/profile.png" alt="" />
+                <h1 class="name">Alan Doe</h1>
+                <h3 class="tagline">Full Stack Developer</h3>
+            </div><!--//profile-container-->
             
-        </div>
-        <div class="info">
-            <ul>
-                <li> <span>0332410258</span> </li>
-                <li>29/11/2000</li>
-                <li style="text-indent: -10px;">Phạm Văn Đồng - Cổ Nhuế - Hà Nội</li>
-            </ul>
-        </div>
-        <div class="intro">
-            <h2>Mục tiêu nghề nghiệp</h2>
-            <ul>
-                <li>Trở thành Automation test</li>
-                <li>Có chứng chỉ JLPT N1</li>
-            </ul>
-        </div>
-        <div class="experience">
-            <h2>Kinh nghiệm làm việc</h2>
-
-            <div class="item">
-                <div class="time">
-                    <h4><b>(7/2020 - 8/2021): JUST INFORMATION TECHNOLOGY</b></h4>
-                </div>
-                <h4>Nhân viên kiểm soát chất lượng</h4>
-                <div class="des">
-                    <ul>
-                        <li>Web: C3, TVS, CVEs, Dego</li>
-                        <li>App: Phong thủy tam nghuyên, La bàn việt</li>
-                    </ul>
-
-                </div>
-            </div>
-            <hr>
-            <div class="item">
-                <div class="time">
-                    <h4><b>(8/2021 - Đến nay): Công ty cổ phần chuyển đổi số Viet Ants</b></h4>
-                </div>
-
-                <h4>Trưởng nhóm nhân viên kiểm soát chất lượng</h4>
-                <div class="des">
-                    <ul>
-                        <li>Test lead cho dự án Kế toán,CRM</li>
-                        <li>Đảm bảo chất lượng, Demo bàn giao dự án với khách hàng</li>
-                    </ul>
-                </div>
-            </div>
-            <br>
-            <br>
-            <br>
-            <h2 class="skills">
-                Các kỹ năng
-            </h2>
-            <ul>
-                <li>Biết cách tạo Testcase, thực hiện Test, log bug</li>
-                <li>Có hiểu biết về quy trình và kỹ thuật test</li>
-                <li>Nắm vững quy trình kiểm thử phần mềm</li>
-                <li>Biết sử dụng Postman, Swagger để test API, viết testcase API</li>
-                <li>Biết sử dụng SQL cơ bản</li>
-                <li>Có kiến thức, kinh nghiệm áp dụng các quy trình phát triển phần mềm</li>
-                <li>Năng động, sáng tạo, nhiệt tình</li>
-                <li>Chịu được áp lực cao trong công việc</li>
-                <li>Sẵn sàng làm thêm giờ khi dự án cần</li>
-                <li>Nắm bắt nghiệp vụ nhanh, tiếp nhận và xử lý thông tin tốt</li>
-                <li>Khả năng giao tiếp và làm việc nhóm tốt</li>
-            </ul>
-            <h2 class="skills">
-                Ngoại ngữ
-            </h2>
-            <ul>
-                <li>Tiếng nhật: N3</li>
-            </ul>
-
-        </div>
-        <div class="project">
-            <h2>Dự Án</h2>
-            <div class="item">
-                <h4>Website CVEs- Thư viện số</h4>
-                <div class="time">
-                    2021
-                </div>
-                <div class="location">
-                    Tester
-                </div>
-                <div class="des">
-                    CVE hoạt động 2 phân hệ độc lập: online và ofline
-                    Chức năng tự động dò quét, thu thập (Crawl) dữ liệu mới từ các nguồn trên Internet thông qua hệ
-                    thống các rô-bốt được thiết kế đặc biệt.
-                    <ul>
-                        <li>Tìm hiểu nghiệp vụ,tạo plan,viết kịch bản kiềm thử</li>
-                        <li>Thực hiện test trên hệ thống(Backend và Fronend)</li>
-                        <li>Thực hiện check API, Database</li>
-                        <li>Thực hiện log bug trên Redmine</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="item">
-                <h4>Website TVS- Thư viện số</h4>
-                <div class="time">
-                    2022
-                </div>
-                <div class="web"></div>
-            </div>
-            <div class="location">
-                Tester
-            </div>
-            <div class="des">
-                TVS-Thư viện số là một thư viện sửa dụng nội bộ. chứa các tài liệu của nhóm, phòng ban, tổng công ty
-                <ul>
-                    <li>Tìm hiểu nghiệp vụ, tạo plan, viết kịch bản kiềm thử</li>
-                    <li>Thực hiện test trên hệ thống(Backend và Fronend)</li>
-                    <li>Thực hiện check API, Database</li>
-                    <li>Thực hiện log bug trên Redmine</li>
+            <div class="contact-container container-block">
+                <ul class="list-unstyled contact-list">
+                    <li class="email"><i class="fa-solid fa-envelope"></i><a href="mailto: yourname@email.com">alan.doe@website.com</a></li>
+                    <li class="phone"><i class="fa-solid fa-phone"></i><a href="tel:0123 456 789">0123 456 789</a></li>
+                    <li class="website"><i class="fa-solid fa-globe"></i><a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/orbit-free-resume-cv-bootstrap-theme-for-developers/" target="_blank">portfoliosite.com</a></li>
+                    <li class="linkedin"><i class="fa-brands fa-linkedin-in"></i><a href="#" target="_blank">linkedin.com/in/alandoe</a></li>
+                    <li class="github"><i class="fa-brands fa-github"></i><a href="#" target="_blank">github.com/username</a></li>
+                    <li class="twitter"><i class="fa-brands fa-twitter"></i><a href="https://twitter.com/3rdwave_themes" target="_blank">@twittername</a></li>
                 </ul>
-            </div>
-
-
-            <div class="item">
-                <h4>Website CRM</h4>
-                <div class="time">
-                    2022-Đến nay
-                </div>
-                <div class="web">
-
-                </div>
-                <div class="location">
-                    Tester (Testlead)
-                </div>
-                <div class="des">
-                    web app: CRM Quản lý thông tin khách hàng
-                    <div> Mô tả dự án: CRM là hệ thống giúp doanh nghiệp quản lý các thông tin liên quan đến khách hàng
-                        <br>
-                        <br>
-                        <b>Công việc:</b>
-                        <ul>
-                            <li>Tìm hiểu nghiệp vụ, tạo plan, viết kịch bản kiềm thử</li>
-                        <li>Thực hiện test trên hệ thống(Backend và Fronend)</li>
-                        <li>Thực hiện check API, Database</li>
-                        <li>Thực hiện log bug trên hệ thống Jira</li>
-                            <li>Chịu trách nhiệm chính về chất lượng sản phẩm</li>
-                            <li>Review các tài liệu của tester</li>
-                            <li>Demo và nghiệm thu sản phẩm trực tiếp với phòng Quản lý chất lượng của đối tác
-                            </li>
-                            <li>Viết kịch bản kiềm thử chứa SQL, testcase API của một số chức năng (Tra cứu định mức, Phương án kinh doanh, Khách hàng hiện hữu, Cơ hội hợp đồng,...)</li>
-                        </ul>
-                        <b>Team size:</b>
-                        <ul>
-                            <li>15(3 tester)</li>
-                        </ul>
-                        <b>Công nghệ sử dụng</b>
-                        <ul>
-                            <li>Spring boot</li>
-                            <li>MySQL</li>
-                            <li>VueJs</li>
-                            <li>Microservice</li>
-                            <li>CI/CD</li>
-                        </ul>
+            </div><!--//contact-container-->
+            <div class="education-container container-block">
+                <h2 class="container-block-title">Education</h2>
+                <div class="item">
+                    <h4 class="degree">MSc in Computer Science</h4>
+                    <h5 class="meta">University of London</h5>
+	                    <div class="time">2016 - 2018</div>
+                </div><!--//item-->
+                <div class="item">
+                    <h4 class="degree">BSc in Applied Mathematics</h4>
+                    <h5 class="meta">Bristol University</h5>
+                    <div class="time">2012 - 2016</div>
+                </div><!--//item-->
+            </div><!--//education-container-->
+            
+            <div class="languages-container container-block">
+                <h2 class="container-block-title">Languages</h2>
+                <ul class="list-unstyled interests-list">
+                    <li>English <span class="lang-desc">(Native)</span></li>
+                    <li>French <span class="lang-desc">(Professional)</span></li>
+                    <li>Spanish <span class="lang-desc">(Professional)</span></li>
+                </ul>
+            </div><!--//interests-->
+            
+            <div class="interests-container container-block">
+                <h2 class="container-block-title">Interests</h2>
+                <ul class="list-unstyled interests-list">
+                    <li>Climbing</li>
+                    <li>Snowboarding</li>
+                    <li>Cooking</li>
+                </ul>
+            </div><!--//interests-->
+            
+        </div><!--//sidebar-wrapper-->
+        
+        <div class="main-wrapper">
+            
+            <section class="section summary-section">
+                <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-user"></i></span>Career Profile</h2>
+                <div class="summary">
+                    <p>Summarise your career here lorem ipsum dolor sit amet, consectetuer adipiscing elit. You can <a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/orbit-free-resume-cv-bootstrap-theme-for-developers/" target="_blank">download this free resume/CV template here</a>. Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu.</p>
+                </div><!--//summary-->
+            </section><!--//section-->
+            
+            <section class="section experiences-section">
+                <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-briefcase"></i></span>Experiences</h2>
+                
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">Lead Developer</h3>
+                            <div class="time">2023 - Present</div>
+                        </div><!--//upper-row-->
+                        <div class="company">Startup Hubs, San Francisco</div>
+                    </div><!--//meta-->
+                    <div class="details">
+                        <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.</p>  
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+                    </div><!--//details-->
+                </div><!--//item-->
+                
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">Senior Software Engineer</h3>
+                            <div class="time">2018 - 2023</div>
+                        </div><!--//upper-row-->
+                        <div class="company">Google, London</div>
+                    </div><!--//meta-->
+                    <div class="details">
+                        <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>  
                         
-                    </div>
-                </div>
-            </div>
-        </div>
+                    </div><!--//details-->
+                </div><!--//item-->
+                
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">UI Developer</h3>
+                            <div class="time">2016 - 2018</div>
+                        </div><!--//upper-row-->
+                        <div class="company">Amazon, London</div>
+                    </div><!--//meta-->
+                    <div class="details">
+                        <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>  
+                    </div><!--//details-->
+                </div><!--//item-->
+                
+            </section><!--//section-->
+            
+            <section class="section projects-section">
+                <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-archive"></i></span>Projects</h2>
+                <div class="intro">
+                    <p>You can list your side projects or open source libraries in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.</p>
+                </div><!--//intro-->
+                <div class="item">
+                    <span class="project-title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderpro-bootstrap-5-startup-template-for-software-projects/" target="_blank">CoderPro</a></span> - <span class="project-tagline">A responsive website template designed to help developers launch their software projects. </span>
+                    
+                </div><!--//item-->
+                <div class="item">
+                    <span class="project-title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/launch-bootstrap-5-template-for-saas-businesses/" target="_blank">Launch</a></span> - <span class="project-tagline">A responsive website template designed to help startups promote their products or services.</span>
+                </div><!--//item-->
+                <div class="item">
+                    <span class="project-title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/devcard-bootstrap-5-vcard-portfolio-template-for-software-developers/" target="_blank">DevCard</a></span> - <span class="project-tagline">A portfolio website template designed for software developers.</span>
+                </div><!--//item-->
+                <div class="item">
+                    <span class="project-title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/" target="_blank">Nova Pro</a></span> - <span class="project-tagline">A responsive Bootstrap theme designed to help app developers promote their mobile apps</span>
+                </div><!--//item-->
+                <div class="item">
+                    <span class="project-title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-web-development-agencies-devstudio/" target="_blank">DevStudio</a></span> - 
+                    <span class="project-tagline">A responsive website template designed to help web developers/designers market their services. </span>
+                </div><!--//item-->
+            </section><!--//section-->
+            
+            <section class="skills-section section">
+                <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-rocket"></i></span>Skills &amp; Proficiency</h2>
+                <div class="skillset">        
+                    <div class="item">
+                        <h3 class="level-title">Python &amp; Django</h3>
+                        <div class="progress level-bar">
+						    <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 99%" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>                               
+                    </div><!--//item-->
+                    
+                    <div class="item">
+                        <h3 class="level-title">Javascript</h3>
+                        <div class="progress level-bar">
+						    <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>                              
+                    </div><!--//item-->
+                    
+                    <div class="item">
+                        <h3 class="level-title">React &amp; Angular</h3>
+                        <div class="progress level-bar">
+						    <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>                                 
+                    </div><!--//item-->
+                    
+                    <div class="item">
+                        <h3 class="level-title">HTML5 &amp; CSS</h3>
+                        <div class="progress level-bar">
+							    <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>                                
+                    </div><!--//item-->
+                    
+                    <div class="item">
+                        <h3 class="level-title">Ruby on Rails</h3>
+                        <div class="progress level-bar">
+						    <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>                                  
+                    </div><!--//item-->
+                    
+                    <div class="item">
+                        <h3 class="level-title">Sketch &amp; Photoshop</h3>
+                        <div class="progress level-bar">
+						    <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>                                 
+                    </div><!--//item-->
+                    
+                </div>  
+            </section><!--//skills-section-->
+            
+        </div><!--//main-body-->
     </div>
-
+ 
+    <footer class="footer">
+        <div class="text-center">
+            <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+            <small class="copyright">Designed with <i class="fa-solid fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+        
 </body>
 </html> 
-
