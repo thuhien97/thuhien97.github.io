@@ -22,7 +22,7 @@ body{
    row-gap: 30px;
 }
 .fullname {
-    font-size: xx-large !important;
+    font-size: 2rem !important;
 }
 
 @media(max-width: 800px) {
